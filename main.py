@@ -48,7 +48,10 @@ print("PRADEDAM!\n")
 atvaizduoti_lentele(langeliai)
 
 while True:
-    pasirinkimas = input("Pasirinkite vietą įvesdami ją žymintį skaičių (veskite 'B' jei norite išeiti iš žaidimo): ")
+    if ejimas % 2 != 0:
+        pasirinkimas = input(f"{zaidejas1}, pasirinkite vietą įvesdami ją žymintį skaičių (veskite 'B' jei norite išeiti iš žaidimo): ")
+    else:
+        pasirinkimas = input(f"{zaidejas2}, pasirinkite vietą įvesdami ją žymintį skaičių (veskite 'B' jei norite išeiti iš žaidimo): ")
     if pasirinkimas == "B":
         break
     if pasirinkimas.isdigit():
